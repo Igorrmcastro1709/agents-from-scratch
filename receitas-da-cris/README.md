@@ -10,6 +10,12 @@ A ideia é transformar posts salvos do Instagram, PDFs, vídeos, links e imagens
 - **Execução:** criar um passo a passo curto e objetivo para cozinhar sem precisar rever todo o post ou vídeo.
 - **Publicação:** manter o conteúdo em `data/recipes.json` e publicar a página pelo GitHub Pages.
 
+## Como validar a entrega
+
+- Abra `validacao.html` para revisar o MVP em uma página dedicada de validação.
+- Use o preview incorporado para navegar pela entrega final sem sair da tela de checklist.
+- Marque os critérios de aceite e siga o roteiro sugerido antes de publicar.
+
 ## Como atualizar receitas
 
 1. Abra `index.html` pelo GitHub Pages ou em um servidor local.
