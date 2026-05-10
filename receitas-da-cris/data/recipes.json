@@ -1,0 +1,74 @@
+[
+  {
+    "id": "bolo-limao-cremoso",
+    "title": "Bolo de limão cremoso",
+    "category": "Doces",
+    "tags": ["bolo", "limão", "sobremesa"],
+    "timeMinutes": 55,
+    "difficulty": "Fácil",
+    "yield": "10 fatias",
+    "description": "Uma receita exemplo para mostrar como catalogar posts, PDFs, vídeos e links no Receitas da Cris.",
+    "ingredients": [
+      "3 ovos",
+      "1 xícara de açúcar",
+      "1/2 xícara de óleo",
+      "1 xícara de leite",
+      "2 xícaras de farinha de trigo",
+      "1 colher de sopa de fermento",
+      "Raspas e suco de 2 limões"
+    ],
+    "flow": [
+      "Separar ingredientes e pré-aquecer o forno a 180 °C.",
+      "Bater ovos, açúcar, óleo, leite, suco e raspas de limão.",
+      "Incorporar farinha aos poucos e finalizar com fermento.",
+      "Assar em forma untada por cerca de 35 a 40 minutos.",
+      "Esperar amornar, desenformar e registrar ajustes feitos."
+    ],
+    "sources": [
+      {
+        "type": "instagram",
+        "label": "Post salvo no Instagram",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "type": "pdf",
+        "label": "PDF de apoio",
+        "url": "./data/exemplo.pdf"
+      }
+    ],
+    "notes": "Trocar parte do leite por iogurte se quiser uma textura mais úmida."
+  },
+  {
+    "id": "frango-assado-semana",
+    "title": "Frango assado prático da semana",
+    "category": "Salgados",
+    "tags": ["frango", "forno", "marmita"],
+    "timeMinutes": 70,
+    "difficulty": "Médio",
+    "yield": "4 porções",
+    "description": "Modelo de receita salgada com fluxo pensado para executar sem precisar rever o vídeo inteiro.",
+    "ingredients": [
+      "1 kg de sobrecoxa ou peito de frango",
+      "2 dentes de alho",
+      "1 limão",
+      "1 colher de sopa de páprica",
+      "Sal e pimenta a gosto",
+      "Legumes para assar junto"
+    ],
+    "flow": [
+      "Conferir se o frango está descongelado e seco.",
+      "Misturar temperos, limão e alho para formar a marinada.",
+      "Marinar por pelo menos 30 minutos.",
+      "Levar ao forno com legumes até dourar.",
+      "Dividir em porções e salvar observações para a próxima vez."
+    ],
+    "sources": [
+      {
+        "type": "video",
+        "label": "Vídeo de referência",
+        "url": "https://www.youtube.com/"
+      }
+    ],
+    "notes": "Adicionar batata-doce quando quiser transformar em marmita completa."
+  }
+]

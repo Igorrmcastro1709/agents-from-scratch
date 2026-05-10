@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Receitas da Cris</title>
+    <meta
+      name="description"
+      content="Livro online de receitas da Cris, organizado por categorias, fontes e fluxo de preparo."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="Navegação principal">
+        <strong>Receitas da Cris</strong>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#adicionar">Adicionar fonte</a>
+        <a href="./data/recipes.json">Dados</a>
+      </nav>
+      <section class="hero__content">
+        <p class="eyebrow">Livro online vivo</p>
+        <h1>Receitas salvas, organizadas e prontas para cozinhar.</h1>
+        <p>
+          Centralize posts do Instagram, PDFs, vídeos e links em um catálogo pesquisável,
+          com ingredientes, fontes e um fluxo claro de execução para cada receita.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="panel" aria-labelledby="como-funciona">
+        <h2 id="como-funciona">Como o projeto funciona</h2>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Capturar</h3>
+            <p>Salvar o link do post, PDF, vídeo ou imagem que inspirou a receita.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Catalogar</h3>
+            <p>Classificar por tipo, tempo, dificuldade, tags e ocasião de uso.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Executar</h3>
+            <p>Transformar o conteúdo original em uma sequência objetiva de preparo.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Publicar</h3>
+            <p>Atualizar o arquivo de dados e publicar automaticamente pelo GitHub Pages.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolbar" id="catalogo" aria-label="Filtros do catálogo">
+        <label>
+          Buscar receita
+          <input id="search" type="search" placeholder="Ex.: bolo, frango, massa..." />
+        </label>
+        <label>
+          Categoria
+          <select id="category">
+            <option value="Todas">Todas</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="recipe-grid" id="recipes" aria-live="polite"></section>
+
+      <section class="panel add-source" id="adicionar" aria-labelledby="adicionar-titulo">
+        <div>
+          <p class="eyebrow">Atualização contínua</p>
+          <h2 id="adicionar-titulo">Adicionar nova descoberta</h2>
+          <p>
+            Em um site estático no GitHub Pages, este formulário organiza a informação e gera
+            um rascunho JSON. Depois, basta colar no arquivo <code>data/recipes.json</code>
+            ou automatizar essa etapa com GitHub Issues/Actions em uma próxima fase.
+          </p>
+        </div>
+        <form id="source-form">
+          <label>
+            Título ou ideia
+            <input name="title" required placeholder="Ex.: Lasanha de berinjela" />
+          </label>
+          <label>
+            Link, PDF ou mídia
+            <input name="url" required type="url" placeholder="https://..." />
+          </label>
+          <label>
+            Categoria sugerida
+            <select name="category">
+              <option>Doces</option>
+              <option>Salgados</option>
+              <option>Massas</option>
+              <option>Saudáveis</option>
+              <option>Bebidas</option>
+              <option>Para testar</option>
+            </select>
+          </label>
+          <button type="submit">Gerar rascunho</button>
+        </form>
+        <pre id="draft" aria-label="Rascunho JSON gerado"></pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>Receitas da Cris · Feito para publicar no GitHub Pages.</p>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
