@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Validação da entrega · Receitas da Cris</title>
+    <meta
+      name="description"
+      content="Página de validação da entrega final do MVP Receitas da Cris."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero hero--compact">
+      <nav class="topbar" aria-label="Navegação principal">
+        <strong>Receitas da Cris</strong>
+        <a href="./index.html">Ver site</a>
+        <a href="#preview">Preview</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#roteiro">Roteiro</a>
+      </nav>
+      <section class="hero__content hero__content--compact">
+        <p class="eyebrow">Página de validação</p>
+        <h1>Revise a entrega final antes de publicar.</h1>
+        <p>
+          Use esta página para navegar no MVP, confirmar critérios de aceite e registrar o que
+          precisa evoluir antes de levar o Receitas da Cris para o GitHub Pages.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="panel delivery-summary" aria-labelledby="resumo-entrega">
+        <div>
+          <p class="eyebrow">Entrega atual</p>
+          <h2 id="resumo-entrega">O que já está pronto</h2>
+          <p>
+            O MVP entregue é um livro de receitas online estático, com dados em JSON e interface
+            pronta para organizar links do Instagram, PDFs, vídeos, imagens e demais fontes.
+          </p>
+        </div>
+        <div class="summary-cards" aria-label="Indicadores da entrega">
+          <article>
+            <strong>Site</strong>
+            <span>GitHub Pages-ready</span>
+          </article>
+          <article>
+            <strong>Dados</strong>
+            <span>JSON editável</span>
+          </article>
+          <article>
+            <strong>UX</strong>
+            <span>Busca + filtros</span>
+          </article>
+          <article>
+            <strong>Atualização</strong>
+            <span>Rascunho por link</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="preview" aria-labelledby="preview-titulo">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Preview navegável</p>
+            <h2 id="preview-titulo">Visualização da página final</h2>
+          </div>
+          <a class="button-link" href="./index.html" target="_blank" rel="noreferrer">
+            Abrir em nova aba
+          </a>
+        </div>
+        <div class="browser-frame" role="region" aria-label="Preview incorporado do Receitas da Cris">
+          <div class="browser-frame__bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>receitas-da-cris/index.html</p>
+          </div>
+          <iframe src="./index.html" title="Preview do site Receitas da Cris"></iframe>
+        </div>
+      </section>
+
+      <section class="panel" id="checklist" aria-labelledby="checklist-titulo">
+        <p class="eyebrow">Critérios de aceite</p>
+        <h2 id="checklist-titulo">Checklist de validação</h2>
+        <div class="validation-grid">
+          <article class="validation-card">
+            <h3>Experiência e navegação</h3>
+            <label><input type="checkbox" /> A página inicial comunica claramente o objetivo do livro.</label>
+            <label><input type="checkbox" /> A navegação funciona em desktop e celular.</label>
+            <label><input type="checkbox" /> O visual combina com um livro pessoal de receitas.</label>
+          </article>
+          <article class="validation-card">
+            <h3>Catálogo de receitas</h3>
+            <label><input type="checkbox" /> Consigo buscar receitas por texto, ingrediente ou tag.</label>
+            <label><input type="checkbox" /> Consigo filtrar receitas por categoria.</label>
+            <label><input type="checkbox" /> Cada receita mostra ingredientes, rendimento, tempo e dificuldade.</label>
+          </article>
+          <article class="validation-card">
+            <h3>Fluxo de execução</h3>
+            <label><input type="checkbox" /> O passo a passo permite cozinhar sem rever toda a mídia original.</label>
+            <label><input type="checkbox" /> As fontes originais ficam preservadas para consulta.</label>
+            <label><input type="checkbox" /> As notas pessoais ajudam a melhorar a receita depois do teste.</label>
+          </article>
+          <article class="validation-card">
+            <h3>Atualização contínua</h3>
+            <label><input type="checkbox" /> O formulário gera um rascunho JSON a partir de links.</label>
+            <label><input type="checkbox" /> O modelo aceita Instagram, PDF, vídeo, imagem e links gerais.</label>
+            <label><input type="checkbox" /> O README explica como atualizar e publicar.</label>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="roteiro" aria-labelledby="roteiro-titulo">
+        <p class="eyebrow">Como validar</p>
+        <h2 id="roteiro-titulo">Roteiro sugerido de validação</h2>
+        <ol class="review-flow">
+          <li>
+            <strong>Abrir o preview:</strong> navegue pelo site incorporado acima ou abra em nova aba.
+          </li>
+          <li>
+            <strong>Testar busca:</strong> procure por termos como <em>bolo</em>, <em>limão</em>,
+            <em>frango</em> e <em>marmita</em>.
+          </li>
+          <li>
+            <strong>Testar filtros:</strong> alterne entre as categorias disponíveis e confirme se os cards mudam.
+          </li>
+          <li>
+            <strong>Testar nova fonte:</strong> cole um link no formulário da página principal e confira o JSON gerado.
+          </li>
+          <li>
+            <strong>Validar conteúdo:</strong> confirme se os campos do JSON são suficientes para suas receitas reais.
+          </li>
+          <li>
+            <strong>Decidir evolução:</strong> escolha se a próxima fase será upload de mídia, automação com IA,
+            lista de compras ou modo cozinha.
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>Receitas da Cris · Página de validação da entrega.</p>
+    </footer>
+  </body>
+</html>
